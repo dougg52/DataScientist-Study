@@ -1,5 +1,15 @@
 Aqui vamos falar sobre alguns conceitos usados em hadoop.
 
+Ferramentas de trabalho:
+HUE:
+https://docs.gethue.com/user/querying/
+
+IMPALA:
+https://docs.cloudera.com/documentation/enterprise/5-8-x/topics/impala_perf_stats.html#perf_table_stats
+https://docs.cloudera.com/documentation/enterprise/5-6-x/topics/impala_txtfile.html
+https://docs.cloudera.com/documentation/enterprise/5-8-x/topics/impala_show.html
+
+
 Partição
 
 Bucket
