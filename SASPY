@@ -3,6 +3,6 @@
 
 -- Ex declarando uma lib do SAS: sas.saslib("_DOUG", "'/sasusers/gs00907/workgroup/galvsoa'")
 -- Ex extraindo uma base do SAS: df = sas.sasdata(table="TRANSACOES_202012_4", libref="_DOUG ").to_df()
--- 
+-- Fazeno upload local para o SAS
 
 https://sassoftware.github.io/saspy/getting-started.html - Get started
