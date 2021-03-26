@@ -5,8 +5,8 @@ missing_data = pd.concat([total, percent], axis=1, keys=['Total', 'Percent'])
 missing_data.head(20)
 
 ### filter quantitative columns
-quantitative = [f for f in df_train.columns if df_train.dtypes[f] != 'object']
-quantitative
+countinuous = [f for f in df_train.columns if df_train.dtypes[f] != 'object']
+countinuous
 
 ## visuzalization of the data
 f = pd.melt(df_train, value_vars=quantitative)
