@@ -3,3 +3,18 @@ total = df_train.isnull().sum().sort_values(ascending=False)
 percent = (df_train.isnull().sum()/df_train.isnull().count()).sort_values(ascending=False)
 missing_data = pd.concat([total, percent], axis=1, keys=['Total', 'Percent'])
 missing_data.head(20)
+
+### filter quantitative columns
+quantitative = [f for f in df_train.columns if df_train.dtypes[f] != 'object']
+quantitative
+
+## visuzalization of the data
+f = pd.melt(df_train, value_vars=quantitative)
+g = sns.FacetGrid(f, col="variable",  col_wrap=2, sharex=False, sharey=False)
+g = g.map(sns.distplot, "value")
+
+#heatmap
+# we can use this for analises of variables change along the time?
+plt.figure(figsize=(15,5))
+sns.heatmap(df_train.isnull()) 
+
