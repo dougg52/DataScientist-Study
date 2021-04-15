@@ -1,0 +1,8 @@
+Primeira vez que for usar o git:
+ssh-keygen -t rsa -b 4098 -C 'douglas.soares@itau-unibanco.com.br‘
+
+
+
+Navegar até a pasta que o repositório sera clonado
+Copiar o link do git <link>
+Git clone <link>
